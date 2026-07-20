@@ -11,7 +11,7 @@ jobs:
       MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
       BLUESKY_APP_USER: ${{ secrets.BLUESKY_APP_USER }}
       BLUESKY_APP_PASS: ${{ secrets.BLUESKY_APP_PASS }}
-      NARROWBOT_MANUAL: "true"
+      NARROWBOTR_MANUAL: "true"
     steps:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
