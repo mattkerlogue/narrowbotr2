@@ -1,13 +1,16 @@
 # narrobotR (v2)
 
-**narowbotR** (pronounced "narrow-bot-er")[^nb] is a
-[Mastodon](https://mastodon.social/@narrowbotr) and
-[Bluesky](https://bsky.app/profile/narrowbotr.bsky.social) bot written in
-[R](https://r-project.org)and powered by Github Actions that posts a random
-location on the [Canal & River Trust](https://canalrivertrust.org.uk) (CRT)
-network. Where possible it sources a photo of the location from
-[Flickr](https://www.flickr.com), if a Flickr photo is not available it will
-post an aerial photograph sourced from [Mapbox](https://www.mapbox.com).
+:butterfly: Bluesky: https://bsky.app/profile/narrowbotr.bsky.social
+:elephant: Mastodon: https://mastodon.social/@narrowbotr
+
+The **narrowbotR** (pronounced "narrow-bot-r") is a bot on
+[Bluesky](https://bsky.app/profile/narrowbotr.bsky.social)
+[Mastodon](https://mastodon.social/@narrowbotr) that posts random locations on
+the [Canal & River Trust](https://canalrivertrust.org.uk) (CRT) network.
+Where possible it sources a photo of the location from
+[Flickr](https://www.flickr.com), otherwise it posts an aerial photograph
+sourced from [Mapbox](https://www.mapbox.com). The bot is written in
+[R](https://r-project.org) and powered by Github Actions.
 
 ## Background
 
