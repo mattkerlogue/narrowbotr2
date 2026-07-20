@@ -1,0 +1,33 @@
+"feature_type","obj_type_code","feature_label","in_use","n","wt"
+"aqueduct","001","aqueduct",TRUE,330,2
+"boat_lift","020","boat lift",TRUE,1,50
+"bridge","002","bridge",TRUE,2105,0.5
+"bridge","003","road bridge",TRUE,2457,0.5
+"bridge","004","towpath bridge",TRUE,569,0.5
+"bridge","046","footbridge",TRUE,726,0.5
+"bridge","077","pipe bridge",TRUE,514,0.25
+"bridge","117","former bridge",FALSE,106,0.5
+"bridge","129","railway bridge",TRUE,439,0.5
+"canal_km","900","open waterway",TRUE,2966,0.25
+"canal_km","901","partially open waterway",TRUE,40,0.25
+"canal_km","902","waterway pipe",FALSE,1,0.25
+"canal_km","903","closed waterway",FALSE,154,0.25
+"canal_km","904","dry waterway",FALSE,10,0.25
+"canal_km","905","waterway",TRUE,2,0.25
+"culvert","005","culvert",TRUE,2641,0.05
+"culvert","035","towpath culvert",TRUE,74,0.05
+"culvert","078","piped culvert",TRUE,245,0.05
+"dock","999","dock",TRUE,30,4
+"dry_dock","007","dry dock",TRUE,68,4
+"lake_pond_fishery","111","lake, pond or fishery",TRUE,10,5
+"lock","010","lock",TRUE,1585,2
+"lock","018","lock and weir",TRUE,83,2
+"lock","038","disused lock",FALSE,54,2
+"pumping_station","011","pumping station",TRUE,88,2
+"slipway","087","slipway",TRUE,57,2
+"tunnel_portal","097","tunnel portal",TRUE,103,4
+"weir","016","weir",TRUE,802,0.15
+"weir","017","weir",TRUE,296,0.15
+"weir","031","weir",TRUE,10,0.15
+"wharf","105","wharf",TRUE,75,4
+"winding_hole","064","winding hole",TRUE,533,1
