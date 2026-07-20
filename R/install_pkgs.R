@@ -1,0 +1,13 @@
+pak::pkg_install(
+  c(
+    "tibble",
+    "tidyr",
+    "dplyr",
+    "purrr",
+    "jsonlite",
+    "stringr",
+    "lubridate",
+    "rtoot",
+    "bskyr"
+  )
+)
