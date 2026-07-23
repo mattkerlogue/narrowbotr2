@@ -7,10 +7,6 @@ all_points <- readRDS("data/all_points.RDS")
 
 # select location ----
 
-place <- all_points |> dplyr::filter(grepl("Lock 29.*Devizes", name))
-
-place <- all_points |> dplyr::filter(grepl("Buller's Weir", name))
-
 place <- all_points |>
   dplyr::sample_n(size = 1, weight = wt)
 
