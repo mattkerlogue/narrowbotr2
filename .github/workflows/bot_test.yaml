@@ -1,6 +1,15 @@
 name: test-narrowbotR
 
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - 'narrowbot.R'
+      - 'R/**'
+      - 'data/**'
+      - '.github/workflows/bot_test.yaml'
+  workflow_dispatch:
 
 jobs:
   narrowbotR-manual-post:
