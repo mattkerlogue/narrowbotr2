@@ -1,0 +1,23 @@
+Package: narrowbotr2
+Title: A workflow for posting canal locations on Bluesky and Mastodon
+Version: 0.0.0.9000
+Authors@R: 
+    person("Matt", "Kerlogue", , "matt.kerlogue@me.com", role = c("aut", "cre"))
+Description:
+    This is not a package. This DESCRIPTION file is solely to declare
+    dependencies.
+URL: https://github.com/mattkerlogue/narrowbotr2
+Encoding: UTF-8
+Imports: 
+    bskyr,
+    dplyr,
+    jsonlite,
+    lubridate,
+    purrr,
+    rtoot,
+    stringr,
+    tibble,
+    tidyr
+Suggests: 
+    sf,
+    V8
