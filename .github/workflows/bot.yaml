@@ -2,7 +2,8 @@ name: narrowbotR
 
 on:
   schedule:
-    - cron: '19 8-20/4 * * *'
+    - cron: '19 7-19/4 * * *'
+      timezone: "Europe/London"
 
 jobs:
   narrowbotR-post:
