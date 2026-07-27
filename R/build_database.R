@@ -166,6 +166,9 @@ combined_points <- points_raw |>
     #     width = NA_character_,
     #     geometry
     #   )
+  ) |>
+  dplyr::mutate(
+    uid = tidyr::replace_na(uid, uuid::UUIDgenerate())
   )
 
 # readr::write_rds(combined_points, "data/.combined_points.RDS")
