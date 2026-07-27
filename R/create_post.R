@@ -74,7 +74,7 @@
   }
 }
 
-.post_tags <- function(wales, photo_source, flickr_tags = NULL) {
+.post_tags <- function(wales, photo_source, post_chars, flickr_tags = NULL) {
   tags <- c("#canal", "#narrowboat")
   if (wales) {
     tags <- c(tags, "#wales", "#uk")
@@ -123,6 +123,7 @@ create_post <- function(place) {
   tags <- .post_tags(
     place$in_wales,
     place$photo_source,
+    post_chars,
     place$flickr_info$tags
   )
 
