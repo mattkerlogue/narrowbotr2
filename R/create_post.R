@@ -129,7 +129,7 @@ create_post <- function(place) {
 
   # add tags to post
   # prepend additional character return to taglist
-  post$tags <- paste0("\n", paste0(included_tags, collapse = " "))
+  post$tags <- paste0("\n", paste0(tags, collapse = " "))
 
   return(post)
 }
