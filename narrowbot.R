@@ -11,6 +11,15 @@ place <- all_points |>
   dplyr::sample_n(size = 1, weight = wt)
 
 place <- as.list(place)
+cat(
+  "---",
+  "Location selected",
+  place$uid,
+  place$feature_type,
+  paste(place$name, place$waterway, sep = ", "),
+  "---\n",
+  sep = "\n"
+)
 
 # get photo ----
 
