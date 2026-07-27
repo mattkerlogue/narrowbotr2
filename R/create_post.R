@@ -66,8 +66,12 @@
       canal_tags <- c(canal_tags, tags[i])
     }
   }
-  canal_tags <- paste0("#", canal_tags)
-  return(canal_tags)
+  if (length(canal_tags) > 0) {
+    canal_tags <- paste0("#", canal_tags)
+    return(canal_tags)
+  } else {
+    return(NULL)
+  }
 }
 
 .post_tags <- function(wales, photo_source, flickr_tags = NULL) {
@@ -80,12 +84,20 @@
   if (photo_source == "flickr") {
     if (!is.null(flickr_tags)) {
       flickr_tags <- .convert_flickr_tags(flickr_tags)
-      tags <- c(tags, flickr_tags)
+      if (!is.null(flickr_tags)) {
+        tags <- c(tags, flickr_tags)
+      }
     }
   } else if (photo_source == "mapbox") {
     tags <- c(tags, "#aerialphoto #aerialphotography #satelliteview")
   }
-  return(tags)
+
+  # estimate length of tags, cut off tags that pass the 300 character bluesky
+  # limit
+  tag_length <- post_chars + 2 + cumsum(nchar(tags) + 1)
+  included_tags <- tags[tag_length < 300]
+
+  return(included_tags)
 }
 
 create_post <- function(place) {
@@ -113,11 +125,6 @@ create_post <- function(place) {
     place$photo_source,
     place$flickr_info$tags
   )
-
-  # estimate length of tags, cut off tags that pass the 300 character bluesky
-  # limit
-  tag_length <- post_chars + 2 + cumsum(nchar(tags) + 1)
-  included_tags <- tags[tag_length < 300]
 
   # add tags to post
   # prepend additional character return to taglist
