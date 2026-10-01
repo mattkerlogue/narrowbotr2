@@ -21,7 +21,7 @@ export default {
 			auth: env.GITHUB_TOKEN,
 		});
 
-		await octokit.request('POST /repos/mattkerlogue/narrowbotr2/actions/workflows/bot.yaml/dispatches', {
+		await octokit.request('POST /repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches', {
 			owner: 'mattkerlogue',
 			repo: 'narrowbotr2',
 			workflow_id: 'bot.yaml',
