@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '19 7-19/4 * * *'
       timezone: "Europe/London"
+  workflow_dispatch:
 
 jobs:
   narrowbotR-post:
